@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <style>
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:normal;
+  font-style: normal;
+}
+    </style>
     <nav class=" px-10 bg-[#2c2c2c] shadow-lg">
       <div class="sm:flex justify-between">
         <a href="" class="text-white text-3xl p-3 font-bold">Folarin</a>
@@ -39,7 +52,7 @@
         >
           <img
             src="folarinfinal cut.png"
-            class="rounded-full greyscale hover:greyscale-0 hover:scale-110 transition-all"
+            class="rounded-full  hover:top[30px] relative transition-all"
             width="250"
             height="250"
             alt="dss"
@@ -50,10 +63,7 @@
           <h2 class="text-3xl text-[#485752]">Software Developer</h2>
           <!-- <h1 class="text-5xl">Folarin Ogundele</h1> -->
           <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            distinctio ipsam blanditiis aut minus, consequuntur magni cumque,
-            reiciendis a placeat nam exercitationem debitis veritatis? Placeat
-            velit atque nemo saepe qui?
+           I possess a strong foundation in web development, with expertise in HTML, CSS, and JavaScript. With HTML, I can structure websites efficiently, ensuring semantic, accessible, and user-friendly markup. My knowledge of CSS allows me to design responsive and visually appealing interfaces that adapt seamlessly across different devices. Through JavaScript, I add interactivity and dynamic behavior to websites, creating engaging user experiences. Collectively, these skills enable me to build comprehensive and functional web applications.
           </p>
 
           <button
@@ -64,7 +74,28 @@
         </div>
       </div>
     </section>
+    <section id="skills" class="min-h-screen bg-[#f9f6ee] grid place-content-center gap-x-10 ">
+      
+      <h1 class="text-center text3xl text-white">Skills</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10 leading-6 text-[#080808] md:p-12 px-5 gap-y-10 text-justify">
+        <div class=" shadow-xl p-7">
+          <h2 class="text-2xl p-5 text-gray-400 text-center">HTML</h2>
+          <p>I have extensive experience with HTML, the core language used to structure and display content on the web. My expertise includes writing clean, semantic markup, optimizing web pages for accessibility, and utilizing HTML5 features to enhance functionality. I am adept at implementing SEO-friendly practices, structuring content logically, and ensuring cross-browser compatibility.</p>
 
+        </div>
+        <div class=" shadow-xl p-7">
+          <h2 class="text-2xl p-5 text-center text-gray-400">CSS3</h2>
+          <p>I am highly proficient in CSS, which enables me to create visually appealing, responsive, and well-designed websites. I am skilled in using CSS3 features, including Flexbox and Grid, to craft layouts that are adaptive and fluid. My ability to work with media queries ensures that websites maintain functionality and visual consistency across all devices. Additionally, I am experienced in utilizing pre-processors like Sass for more efficient styling and organization of stylesheets.</p>
+
+        </div>
+        <div class="shadow-xl p-7">
+          <h2 class="text-2xl p-5 text-gray-400 text-center">Javascript ES6</h2>
+          <p>I possess strong expertise in JavaScript, allowing me to bring interactivity and dynamic behavior to web applications. I am proficient in using JavaScript for DOM manipulation, event handling, and creating interactive UI components. My skills extend to working with modern JavaScript features such as ES6+ syntax, asynchronous programming (Promises, async/await), and API integration. I also have experience in using libraries like jQuery and frameworks such as React to build more complex, scalable applications.</p>
+
+        </div>
+      </div>
+
+    </section>
     <section id="projects" class="min-h-screen grid p-4 md:p-8 lg:p-12 place-content-center mx-auto sm:container">
       <h1 class="text-3xl py-4 text-center">Projects</h1>
 
@@ -125,8 +156,8 @@
         </div>
 
         <div class="col-span-2">
-          <label for="" class="block text-white text-2xl ">Telephone:</label>
-          <input type="text" class=" col-span-2 w-full p-1 " />
+          <label for="" class="block text-white text-2xl ">Messages:</label>
+          <textarea name="message" id="message" rows="5"  class=" col-span-2 w-full p-1 resize-none" ></textarea>
         </div>
 
         <div class="col-span-2">
@@ -137,8 +168,22 @@
       </div>
     </section>
 
-    <footer>
-      <p class="text-center text-grey-500">copyright &copy; Folarin, Rights Reserved</p>
+    <footer class="h-52 flex self-between flex-col justify-between">
+
+      <div class="flex h-24 flex-col self-center">
+        <div>
+          <h2 class="text-2xl text-center py-10">socials</h2>
+          <ul class="flex justify-around">
+            <li><i class="fa fa-instagram px-10" aria-hidden="true"></i></li>
+            <li><i class="fa fa-whatsapp px-10" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter px-10" aria-hidden="true"></i></li>
+            <li><i class="fa fa-linkedin px-10" aria-hidden="true"></i></li>
+          </ul>
+
+        </div>
+
+      </div>
+      <p class="text-center border border-3 border-grey-500 text-grey-500"> &copy; Folarin, All rights reserved.</p>
     </footer>
 
     <script src="https://cdn-tailwindcss.vercel.app/"></script>
